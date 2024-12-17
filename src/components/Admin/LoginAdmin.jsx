@@ -50,7 +50,7 @@ const LoginAdmin = () => {
         return;
       }
     } catch (error) {
-      toast.error(error.response.data.error);
+      toast.error(error.response?.data?.error);
       console.error("Login error:", error);
     } finally {
       setLoading(false);
