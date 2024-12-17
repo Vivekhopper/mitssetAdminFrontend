@@ -1,0 +1,93 @@
+.login-right{
+  display: flex;
+  justify-content: center;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    .login-left,
+    .login-right {
+      flex: 1;
+      text-align: center;
+    }
+  
+    .login-left img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .login-right-container {
+      // max-width: 400px;
+      width: 30rem;
+      height: 20rem;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+  
+      .login-center {
+        h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+  
+        form {
+          input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+  
+          .pass-input-div {
+            position: relative;
+  
+            input {
+              padding-right: 40px; // Space for the eye icon
+            }
+  
+            svg {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+              cursor: pointer;
+            }
+          }
+  
+          .login-center-buttons {
+            button {
+              width: 100%;
+              padding: 10px;
+              background-color: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 3px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+  
+              &:hover {
+                background-color: #0056b3;
+              }
+  
+              &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
